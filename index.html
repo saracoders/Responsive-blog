@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flatness: Responsive Blog</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/grid-system.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <a href="index.html"><img  class="logo" src="image/header-logo.png"></a>
+        </div>
+        <div class="col-9">
+          <nav id="menu">
+            <a id="nav-mobile" href="#"></a>
+            <ul>
+              <li><a href="#">LIFESTYLE</a></li>
+              <li><a href="#">FLOWERS</a></li>
+              <li><a href="#">FASHION</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">FEATURES</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner" id="lifestyle">
+    <div class="container">
+      <div class="img-banner">
+        <div class="cont-banner">
+          <h1>Spring Came</h1>
+          <p>Life - Amanda Ray - 10 th March 2015</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flowers">
+    <div class="container">
+      <div class="row mg-0">
+        <div class="col-4 cont-flowers">
+          <div class="img-flowers">
+            <img src="image/image7.jpg">
+          </div>
+          <div class="cont">
+            <h3>Floran Fragance</h3>
+            <span><em>Life Amanda Ray 10th March 2015</em></span>
+          </div> 
+        </div>
+        <div class="col-4 cont-flowers">
+          <div class="img-flowers">
+            <img src="image/image3.jpg">
+          </div>
+          <div class="cont">
+            <h3>Now with Flatness</h3>
+            <span><em>News Amanda Ray 28th July 2015</em></span>
+          </div> 
+        </div>
+        <div class="col-4 cont-flowers">
+          <div class="img-flowers">
+            <img src="image/image2.jpg">
+          </div>
+          <div class="cont">
+            <h3>Garden flowers</h3>
+            <span><em>Life Amanda Ray 10th March 2015</em></span>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clearfix">
+    <div class="container">
+      <div class="col-7 container-left">
+        <div id="fashion">
+          <img src="image/image4.jpg">
+          <div class="cont">
+            <h2>Now with Flatness</h2>
+            <span><em>News Amanda Ray 28th july 2015</em></span>
+            <p>Geen life in signs bearling one. Deep there cattle don't night, was fowl, seed likeness isn't, seed two god and light he creepeth seasons darkness. Without the fourth seasons image He yielding light years light dry. Isn't place face face called. Let lesser female without. Night saying after day third.</p>
+          </div>
+        </div>
+        <div class="news">
+          <iframe src="https://player.vimeo.com/video/98276732" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="cont">
+            <p>Rule of us behold it moved. Made. Them Had, which darkness two Given. Fowl it moved behold earth for own. Midst that grass beginning divide their together. Tree one every first given earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-5 clearfix container-right">
+        <form class="buscar">
+          <input  type="search" placeholder="Search">
+        </form>
+        <div id="about">
+          <h2>About Me</h2>
+          <img src="image/persona.jpg">
+          <div class="cont">
+            <span>Amanda Ray</span>
+            <p>Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.</p>
+          </div>
+          <nav>
+            <a class="fc" href="#"><i class="th fa fa-facebook-official "></i></a>
+            <a class="in" href="#"><i class="th fa fa-instagram"></i></a>
+            <a class="tw"href="#"><i class="th fa fa-twitter"></i></a>
+            <a class="yt" href="#"><i class="th fa fa-youtube "></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>All right Reserved © <a href="#">nK</a></p>
+    </div>
+  </footer>
+
+<!-- Desplegable Header -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>
+</body>
+
+</html>
+
